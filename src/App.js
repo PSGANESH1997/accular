@@ -39,9 +39,11 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Shopping Cart</h1>
-        <p>Items in Cart: {cartCount}</p>
+      <header className="header-cards">
+        <h1 className="header-title">Shopping Cart</h1>
+        <p className="count-title">
+          <span className="cart-count">Items in Cart: {cartCount}</span>
+        </p>
       </header>
       <div className="product-container">
         {products.map((product) => (

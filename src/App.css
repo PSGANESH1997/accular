@@ -2,6 +2,57 @@
   box-sizing: border-box;
 }
 
+/* Style for header section */
+.header-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #84f7f3; /* Header background color */
+  padding: 20px;
+  color: #07ae07;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header-cards h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cart-count {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  background-color: #8cf8a5; /* Background color for cart count */
+  color: #0b5c30;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+}
+
+
 body {
   display: flex;
   justify-content: center;
